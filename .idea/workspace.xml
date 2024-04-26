@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff24c1fc-df5e-4e23-ba7b-e820c6ff2e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hld1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/Caching.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/ConsistentHashing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/LB_Algos.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/database_design.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/load_balancer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/scaling.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/sharding.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read/system_design.md" afterDir="false" />
+    <list default="true" id="ff24c1fc-df5e-4e23-ba7b-e820c6ff2e55" name="Changes" comment="2">
+      <change afterPath="$PROJECT_DIR$/src/read/10_pacelc_theoram.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/read/11_master_slave.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/read/9_cap_theoram.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/read/case_studies/cache-sharding-case_study.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/read/case_studies/caching_case_study_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/read/7_Caching.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/read/7_Caching.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ritu_/Documents/workspace/hld/hld1/src/read/case_studies&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,6 +48,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ritu_\Documents\workspace\hld\hld1\src\read\case_studies" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ritu_\Documents\workspace\hld\hld1\src\read" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,10 +73,35 @@
       <updated>1713320836622</updated>
       <workItem from="1713320837719" duration="10510000" />
       <workItem from="1713404400385" duration="3966000" />
+      <workItem from="1713460354842" duration="514000" />
+      <workItem from="1713494208391" duration="1611000" />
+      <workItem from="1713747657341" duration="2379000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1713460451381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713460451381</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2">
+      <option name="closed" value="true" />
+      <created>1713460711845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713460711845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
 </project>

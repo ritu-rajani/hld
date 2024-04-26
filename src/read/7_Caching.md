@@ -49,6 +49,8 @@
 ## 1. TTL (Time to Live) 
 - Entries in the cache will be valid for only a period. And after that, to again get the entries, you need to fetch them again.
 - So, for example, if you cache an entry X at timestamp T with TTL of 60 seconds, then for all requests asking for entry X within 60 seconds of T, you read directly from cache. When you go asking for entry X at timestamp T+61, the entry X is gone and you need to fetch again. 
+- low TTL can results in lots of cache misses and expires the file very frequently
+- high TTL can results in stale files for longer period and can be inconsistent
 
 ## 2. Keeping cache and DB in sync :
 - We can keep cache and db in sync with these strategies : 
@@ -77,6 +79,24 @@ Cache can hold the limited data and hence there are various eviction strategies 
 - MRU (Most Recently Used)
 The eviction strategy must be chosen based on the data that is more likely to be accessed. The caching strategy should be designed in such a way that you have a lot of cache hits than a cache miss.
 
+# Global Caching vs Local Caching
+Deciding between using a local cache or a global cache depends on various factors such as the specific requirements of your application, the scale of your system, and the nature of the data being cached. Here are some considerations to help you make that decision:
+
+1. **Scope of Data Access**: Consider whether the data that needs to be cached is specific to each user or request (local scope) or if it is shared across multiple users or requests (global scope). If the data is specific to each user or request, a local cache might be more appropriate. If the data is shared across multiple users or requests, a global cache might be necessary.
+
+2. **Performance Requirements**: Evaluate the performance requirements of your application. Local caches can provide faster access to data since they are typically located closer to the application, but they might not be suitable for sharing data across different instances or servers. Global caches can provide shared access to data but might introduce additional latency due to network communication.
+
+3. **Consistency Requirements**: Consider the consistency requirements of your application. Local caches can provide strong consistency guarantees since they are typically managed within the same process or machine. Global caches might introduce eventual consistency issues due to network latency and distributed nature.
+
+4. **Scalability**: Think about the scalability requirements of your application. Global caches can be scaled horizontally to accommodate increasing load by adding more cache nodes, but they might introduce additional complexity in managing distributed systems. Local caches might be easier to manage but could become a bottleneck as the application scales.
+
+5. **Data Size**: Consider the size of the data being cached. Local caches are suitable for caching small to moderate-sized data since they are typically limited by the resources of the application process or machine. Global caches, especially distributed caching solutions, can handle larger datasets more efficiently.
+
+6. **Failure Tolerance**: Evaluate the tolerance to failures in your application. Global caches, especially distributed ones, might introduce additional points of failure due to network communication and distributed nature. Local caches are more resilient to network failures but might not be suitable for high availability scenarios.
+
+7. **Cost Consideration**: Consider the cost implications of using a global cache versus a local cache. Global caching solutions might involve additional infrastructure costs for setting up and maintaining distributed systems. Local caches might be more cost-effective for smaller-scale applications.
+
+Ultimately, the decision between using a local cache or a global cache depends on balancing these factors according to the specific requirements and constraints of your application. It's often beneficial to start with a simple local cache and then evaluate the need for a global cache as your application evolves and scales.
 
 
 
