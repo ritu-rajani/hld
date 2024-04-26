@@ -59,14 +59,14 @@
 - whenever there is a write request it first updates the cache and then updates the db
 - if db updates fail , reverts from cache as well.
 - reading is faster , writing is slower
-- For a read-heavy system, this could be a great approach.
+- For a read-heavy system, this could be a great approach.<br>
 ***2. Write Back Cache***
 - First, the write is written in the cache. 
 - The moment write in the cache succeeds, you return success to the client. 
 - Data is then synced to the database asynchronously (without blocking current ongoing request).
 - The method is preferred where you don't care about the data loss immediately, like in an analytic system where exact data in the DB doesn't matter, and analytical trends analysis won't be affected if we lose data or two.
 - It is inconsistent, but it will give very high throughput and very low latency.
-- Async version of write through.
+- Async version of write through.<br>
 ***3. Write Around Cache***
 - writes are written directly to database and cache is updated after TTL/any mechanism.
 - TTL or any similar mechanism is used to fetch the data from the database to cache to sync with it.
