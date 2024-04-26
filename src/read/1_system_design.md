@@ -1,7 +1,7 @@
 # What’s system design?
 
 >- Low level design covers the structure of code in a given component. 
->- However, a large scale system will have multiple components / services. High level design is about the optimal design of which components to have for a fast and efficient system. More on this later.
+>- However, a large scale system will have multiple components / services. High level design is about the optimal design of which components to have for a fast and efficient system. 
 >- It is the process of designing the architecture, components , modules , interfaces ad data to meet the requirement and build and efficient system
 >- ensuring factors like scalability , reliability , performance and security
 
